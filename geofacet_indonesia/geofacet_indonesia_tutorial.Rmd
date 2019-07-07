@@ -91,17 +91,17 @@ ggplot( aes(candidate, pct_votes, fill = candidate)) +
 
 ## Second Plot: % Changed 2014-2019 Presidential Election
 ```{r plot result 2014-2019 presidential election, fig.height = 7, fig.width = 11, fig.align = "center"}
-pilpres <- pilpres_long %>% rename(name_indo = name)
+pilpres_movement <- pilpres_long %>% rename(name_indo = name)
 
-ggplot(data=pilpres,aes(x=as.factor(year),y=pct_votes,group=candidate))+
+ggplot(data=pilpres_movement,aes(x=as.factor(year),y=pct_votes,group=candidate))+
   geom_line(aes(color = candidate))+
   geom_point(aes(color = candidate))+
-  geom_text_repel(data = pilpres %>% filter(year == 2014), 
+  geom_text_repel(data = pilpres_movement %>% filter(year == 2014), 
             aes(label = paste0(round(pct_votes*100,1), "%")) , 
             #hjust = -1, 
             fontface = "bold",
             size=1.4)+
-  geom_text_repel(data = pilpres %>% filter(year == 2019), 
+  geom_text_repel(data = pilpres_movement %>% filter(year == 2019), 
             aes(label = paste0(round(pct_votes*100,1), "%")) , 
             #hjust = -1, 
             fontface = "bold",
