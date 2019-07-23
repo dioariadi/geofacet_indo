@@ -108,3 +108,5 @@ ggplot(data=pilpres_movement,aes(x=as.factor(year),y=pct_votes,group=candidate))
     )
 ```
 ![2014-2019_presidential_election movement % voters](https://github.com/dioariadi/geofacet_indo/blob/master/geofacet_indonesia/presidential_election_2014_2019.png)
+
+[original post](https://datawizart.com/r/r-chart-types/r-geofacet-will-change-how-we-visualize-spatial-data/)
