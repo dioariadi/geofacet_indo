@@ -19,7 +19,7 @@ indo_grid <- data.frame(col=x, row=y,code=code,name=name,name_indo = name_indo)
 grid_preview(indo_grid)
 ```
 
-![preview-geofacet-indo](https://github.com/dioariadi/geofacet_indo/blob/master/geofacet_indonesia/tutorial-geofacet-indonesia.png)
+![preview-geofacet-indo](https://raw.githubusercontent.com/dioariadi/geofacet_indo/master/geofacet_indonesia/tutorial-geofacet-indonesia.png)
 
 
 
@@ -70,7 +70,8 @@ ggplot( aes(candidate, pct_votes, fill = candidate)) +
   labs(fill = "Candidate")+
   coord_flip()
 ```
-![2019_presidential_election](https://github.com/dioariadi/geofacet_indo/blob/master/geofacet_indonesia/presidential_election_2019.png)
+![2019_presidential_election](https://raw.githubusercontent.com/dioariadi/geofacet_indo/master/geofacet_indonesia/presidential_election_2019.png)
+
 
 ## Second Plot
 
@@ -107,6 +108,6 @@ ggplot(data=pilpres_movement,aes(x=as.factor(year),y=pct_votes,group=candidate))
     legend.position = "top"
     )
 ```
-![2014-2019_presidential_election movement % voters](https://github.com/dioariadi/geofacet_indo/blob/master/geofacet_indonesia/presidential_election_2014_2019.png)
+![2014-2019_presidential_election movement % voters](https://raw.githubusercontent.com/dioariadi/geofacet_indo/master/geofacet_indonesia/presidential_election_2014_2019.png)
 
 [original post](https://datawizart.com/r/r-chart-types/r-geofacet-will-change-how-we-visualize-spatial-data/)
